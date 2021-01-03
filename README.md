@@ -4,13 +4,24 @@
 
 #### by [Rodrigo Pinheiro][github]
 
+### About
+
+Spliny is a simple, decoupled, and ready to use solution for 3D splines in the Unity Engine,
+the splines work around the `PathCreator` behaviour which generates and loads the path in editor.
+
+Spliny offers a way to serialize paths into Unity's `ScriptableObjects` which can be used
+for a data-driven system that needs to load different fixed paths at runtime. This was
+exactly why spliny was made!
+
 ### How to use
 * Add a `PathCreator.cs` behaviour script to the object that will manage the spline
 
 ![splineMonobehaviour][behaviour]
+
 * You can now shape, save and load paths to your liking
 
-* You can create new behaviours using the created paths like the one in the `Examples` folder `MoveAlongPath.cs`.
+* You can create new behaviours using the created paths like the one in the `Examples` folder `MoveAlongPath.cs`. Here the lerp amount goes from `[0, 1]` and moves the object by that
+value percentage along the curve. Both the curve and the lerp amount can and should be set programmatically.
 
 ![movePathBehaviour][moveBehaviour]
 
