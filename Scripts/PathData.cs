@@ -6,7 +6,7 @@ namespace Spliny
 {
     public class PathData : ScriptableObject
     {
-        [SerializeField, ReadOnly]
+        [SerializeField]
         private List<Vector3> _points;
         public bool Closed { get; set; }
         public List<Vector3> Points
